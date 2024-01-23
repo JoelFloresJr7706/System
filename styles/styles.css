@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Droid Sans Mono;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{ 
+    background: gray;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.boximg {
+    padding: 20px;
+    background: url('../Images/showcase.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    color: royalblue;
+    text-shadow: 0px 2px 5px;
+    text-align: center;
+}
+
+span{
+    color: white;
+    font-size: 20pt;
+    
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header{
+    background: black;
+    padding-top:10px;
+    min-height:70px;
+    border-bottom:royalblue 3px solid;
+}
+.highlight{
+    color: royalblue;
+}
+.container{
+    padding: 10px 10%;    
+}
+
+nav{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{ 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: ;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #4169e1;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 15%;
+}
+
+nav .fa-solid{
+    color: #d3d3d3;
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background: #4169e1;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: left 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+
+nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.text-info{
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    margin: 10px;
+}
+l
+
+.box1{
+        padding: 20px;
+        margin: 5px;
+        color: black;
+        text-align: center;
+    }
+
+.card02 {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.card01 {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.box01 {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.box02 {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+@media (min-width: 600px){
+    main{
+        display: flex;
+        flex-flow: row;
+    }
+    .box1{
+        flex: 1;
+    }
+    .box2{
+        flex: 1;
+    }
+}
