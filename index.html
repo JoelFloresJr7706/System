@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Sports Event Management System</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        
+        <script src="https://kit.fontawesome.com/e0ba072990.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header>
+        <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li class="current"><a href="schools.html">Schools</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+                    <i class="fa-solid fa-arrow-left" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>                
+            </nav>
+            <h2><span class="highlight">Sports</span> Event</h2>
+        </div>
+    </div>    
+    </header>
+    <div class="boximg">
+        <h2>Sports Event Management System</h2>
+        <br><span>Welcome!</span>
+    </div>
+    <main>
+     <div class="box1">
+        <div class="box01">
+            <img src="Images/updates.jpg" width="100%">
+            <a href="updates.html">See More</a>
+        </div>
+        <div class="card01">
+            <img src="Images/vball-updates.jpg" width="100%">
+            <a href="vball.html">See More</a>
+        </div>
+     </div>
+     <div class="box2">
+        <div class="box02">
+            <img src="Images/bball-updates.jpg" width="100%">
+            <a href="bball.html">See More</a>
+        </div>
+        <div class="card02">
+            <img src="Images/badmin-updates.jpg" width="100%">
+            <a href="vball.html">See More</a>
+        </div>
+     </div>
+    </main>
+</body>
+<script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.left = "0";
+        }
+        function closemenu(){
+            sidemeu.style.left = "-200px";
+        }
+
+    </script>

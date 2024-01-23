@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Sports Event Management System</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+        
+        <script src="https://kit.fontawesome.com/e0ba072990.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header>
+        <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li class="current"><a href="schools.html">Schools</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+                    <i class="fa-solid fa-arrow-left" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>                
+            </nav>
+            <h1><span class="highlight">Sports</span> Event</h1>
+        </div>
+    </div>    
+    </header>
+    <div class="text-info">
+        <h2><span>Schools</span></h2>
+        <br><p>Doña Carmen Denia National High School<p>
+            <p>Crossing Bayabas National High School</p>
+            <p>Brokenshire College of Toril</p>
+            <p>San Miguel Integrated High</p>
+            <p>St. Peter College of Toril</p>
+    </div>    
+</body>
+<script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.left = "0";
+        }
+        function closemenu(){
+            sidemeu.style.left = "-200px";
+        }
+
+    </script>
